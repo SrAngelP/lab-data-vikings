@@ -84,7 +84,9 @@ class War(object):
     def __init__(self):
         self.viking_army = [];
         self.saxon_army = [];
-        
+    
+    def show_viking(self, numero):
+        return (self.viking_army[numero].name,self.viking_army[numero].health, self.viking_army[numero].strength);
         
         
     def add_viking(self, Viking):
